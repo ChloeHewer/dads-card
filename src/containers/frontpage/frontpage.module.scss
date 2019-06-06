@@ -6,6 +6,14 @@
   align-items: center;
 }
 
+.writting{
+  position: absolute;
+  width: 90%;;
+  height: 100%;
+  top: -6vh;
+  left: 0vw;
+}
+
 .parent {
   padding: 100px;
 }
@@ -43,32 +51,31 @@
 }
 
 .happyBirthday {
-  position: absolute;
+  height: 25vh;
   font-family: "Concert One", cursive;
   font-weight: bolder;
   color: #ffffff;
   width: 24vw;
   right: 22vw;
   top: 0vh;
-  font-size: 50pt;
+  font-size: 40pt;
 }
 
 .beProudText {
-  position: absolute;
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
   color: white;
   width: 18vw;
   right: 27vw;
   bottom: 5vw;
-  font-size: 45pt;
+  font-size: 30pt;
   .so {
     font-family: "Gloria Hallelujah", cursive;
   }
   .proud {
     font-family: "Lobster", cursive;
     font-weight: bolder;
-    font-size: 50pt;
+    font-size: 45pt;
   }
   .awesome {
     font-family: "Permanent Marker", cursive;
@@ -131,7 +138,38 @@
   box-shadow: 4px 3px rgba(0, 0, 0, 0.521);
   border: 1px solid black;
   z-index: 1;
-  p {
-    background-color: yellow;
+}
+
+@media only screen and (max-width: 1150px) {
+.happyBirthday {
+  height: 25vh;
+  font-family: "Concert One", cursive;
+  font-weight: bolder;
+  color: #ffffff;
+  width: 24vw;
+  right: 22vw;
+  top: 0vh;
+  font-size: 35pt;
+}
+
+.beProudText {
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+  color: white;
+  width: 18vw;
+  right: 27vw;
+  bottom: 5vw;
+  font-size: 20pt;
+  .so {
+    font-family: "Gloria Hallelujah", cursive;
   }
+  .proud {
+    font-family: "Lobster", cursive;
+    font-weight: bolder;
+    font-size: 35pt;
+  }
+  .awesome {
+    font-family: "Permanent Marker", cursive;
+  }
+}
 }

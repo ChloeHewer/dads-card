@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./frontpage.module.scss";
 
-export interface IProps {}
+export interface IProps { }
 
 export interface IState {
   isCardOpen: boolean;
@@ -14,7 +14,9 @@ class FrontPage extends React.Component<IProps, IState> {
     return (
       <section className={styles.centerCard}>
         <div className={styles.innerCard}>
-          <p>Happy Birthday</p>
+          <p>To Father,</p>
+          <p>HAPPY BIRTHDAY OLD MAN</p>
+          <p>Hope your day is amazing - which it will be because we're gonna be there</p>
         </div>
         <section className={styles.frontPage}>
           <div
@@ -23,15 +25,17 @@ class FrontPage extends React.Component<IProps, IState> {
           >
             <div className={styles.flipCardFront}>
               <div className={styles.parent}>
-                <p className={styles.happyBirthday}>HAPPY BIRTHDAY FATHER</p>
-                <section className={styles.beProudText}>
-                  <p>
-                    You must be <span className={styles.so}>so</span>
-                    <span className={styles.proud}> proud</span> at how
-                    <span className={styles.awesome}> awesome</span> I turned
-                    out!
+                <span className={styles.writting}>
+                  <section className={styles.beProudText}>
+                    <p className={styles.happyBirthday}>HAPPY BIRTHDAY FATHER</p>
+                    <p>
+                      You must be <span className={styles.so}>so</span>
+                      <span className={styles.proud}> proud</span> at how
+                      <span className={styles.awesome}> awesome</span> I turned
+                        out!
                   </p>
-                </section>
+                  </section>
+                </span>
                 <div className={styles.slanted}>
                   <div className={styles.familyPic} />
                   <div />
